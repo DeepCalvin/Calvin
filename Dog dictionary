@@ -1,0 +1,678 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat May 22 23:23:29 2021
+
+@author: Calvin Supasanya
+@credits: Maary Ann Martiness Delacrous
+
+Source:
+    Encyclopaedia of Dog
+"""
+# importing os.path
+import os.path
+
+print("""      Copyright© 2021 Calvin Supasanya
+      International rights secured
+      All rights reserved    """)
+
+# Dog
+def dog (country, lifespan, height, weight):
+    
+    print("\n\tCountry of orgin:", country)
+    
+    print("\n\tLife expectancy:", lifespan)
+    
+    print("\n\tAvg height:", height)
+    
+    print("\n\tAvg weight:", weight)
+
+# Terrier
+def terrier():
+    print("""
+         
+          - Yorkshire Terrier
+          - Bull Terrier
+          - Boston Terrier
+          - West Highland White Terrier
+          - Scottish Terrier
+          - Airedale Terrier
+          -Jack Russell Terrier
+          
+          """)
+              
+              
+# Collie
+def collie():
+    print("""
+          
+          - Border Collie
+          - Collie Langhaar
+          - Bearded Collie
+          
+          """)
+          
+# Shepherd
+def shepherd():
+    print("""
+          
+          - Austrailian Shepherd
+          - Belgian Shepherd
+          - Shetland Shepherd
+          
+          """)
+          
+# Poland
+def poland():
+    print("""
+          
+          - Pomeranian
+          
+          """)
+          
+# Mexico
+def mexico():
+    print("""
+          
+          - Chihuahua
+          
+          """)
+          
+# China
+def china():
+    print("""
+          
+          - Pug
+          - Shi Tzu
+          - Shar Pei
+          - Chow Chow
+          - Pekingese
+          - Lhasa Apso
+          - Tebetan Mastiff
+          
+          """)
+          
+# Malta
+def malta():
+    print("""
+          
+          - Maltese
+          
+          """)
+          
+# Germany
+def germany():
+    print("""
+          
+          - Pomeranian
+          - Poodle
+          - Dachshund
+          - Schnauzer
+          - Rottweiler
+          - Doberman Pinscher
+          - German Shepherd
+          - Boxer
+          - Great Dane
+          
+          """)
+          
+# Afghanistan
+def afghanistan():
+    print("""
+          
+          - Afghan Hound
+          
+          """)
+          
+# England
+def england():
+    print("""
+          
+          - West Highland White Terrier
+          - Yorkshire Terrier
+          - Bull Terrier
+          - Bull Dog
+          - Cavalier King Charless Spaniel
+          - Scottish Terrier
+          - Border Collie
+          - Welsh Corgi
+          - Old English Sheepdog
+          - Collie Langhaar
+          - Shetland Shepherd
+          - Bearded Collie
+          - Beagle
+          - Golden Retriever
+          - Airedale Terrier
+          - English Cocker Spaniel
+          - Pointer
+          - Jack Russell Terrier
+          
+          """)
+          
+# Japan
+def japan():
+    print("""
+          
+          - Japanese Splitz
+          - Akita
+          - Japanese Chin
+          - Shiba Inu
+          
+          """)
+          
+# France
+def france():
+    print("""
+          
+          - French Bulldog
+          - Papillon
+          - Bichon Frise
+          - Great Pyreness
+          - Briard
+          - Basseet Hound
+          
+          """)
+          
+# American
+def american():
+    print("""
+          
+          - Boston Terrier
+          - American Eskimo
+          - Austailian Shepherd
+          
+          """)
+          
+# Cuba
+def cuba():
+    print("""
+          
+          - Havanes
+          
+          """)
+          
+# Belgium
+def belgium():
+    print("""
+          
+          - Brussels Griffon
+          - Belgian Shepherd
+          - Blood Hound
+          
+          """)
+          
+# Spain
+def spain():
+    print("""
+          
+          - Great Pyreness
+          
+          """)
+          
+# Hungary
+def hungary():
+    print("""
+          
+          - Puli
+          
+          """)
+          
+# Russia
+def russia():
+    print("""
+          
+          - Samyoed
+          - Husky
+          - Borzoi
+          
+          """)
+          
+# Canada
+def canada():
+    print("""
+          
+          - Labrador Retriever
+          
+          """)
+          
+# Crotia
+def crotia():
+    print("""
+          
+          - Dalmatian
+          
+          """)
+          
+# Switzerland
+def switzerland():
+    print("""
+          
+          - Saint Bernard
+          - Barnese Mountain Dog
+          
+          """)
+          
+# Retriever
+def retriever():
+    print("""
+          
+          - Golden Retriever
+          - Labrador Retriever
+          
+          """)
+
+# A loop to let user have the infromation
+while True:
+    
+    # Giving user an input
+    user=input("Type a dog breed to get the information: ")
+    
+    # End
+    if user=="end" or user=="End":
+        break
+    
+    
+    # House Dog
+    # Terrier
+    # Poland # Germany # Maxico # China # Malta # England # Japan # France # America # Cuba # Belgium
+    
+    # Pomeranian
+    elif user=="pomeranian" or user=="Pomeranian":
+        dog("Poland and Germany", "12~16 years", "20~28 cm", "1.5~3 kg")
+        
+    # Chihuahua
+    elif user=="chihuahua" or user=="Chihuahua":
+        dog("Mexico", "15~18 years", "15~23 cm", "1~5 kg")
+        
+    # Poodle
+    elif user=="poodle" or user=="Poodle":
+        dog("Germany", "14~17 years", "37~40 cm", "20.5~32 kg")
+        
+    # Pug
+    elif user=="pug" or user=="Pug":
+        dog("China", "12~15 years", "25~28 cm", "6.3~8.7 kg")
+        
+    # Shi Tzu
+    elif user=="shi tzu" or user=="Shi tzu" or user=="Shi Tzu" or user=="shi Tzu" or user=="shitzu":
+        dog("China", "12~14 years", "25~45 cm", "4~9 kg")
+        
+    # West Highland White Terrier # Terrier # House Dog
+    elif user=="White Terrier" or user=="white terrier" or user=="West Highland White Terrier" or user=="west highland white terrier":
+        dog("England", "15 years", "25~28 cm", "7~10 kg")
+        
+    # Maltese
+    elif user=="maltese" or user=="Maltese":
+        dog("Malta", "10~15 years", "20~25 cm", "2~3.2 kg")
+        
+    # Dachshund
+    elif user=="dachsund" or user=="Dachshund":
+        dog("Germany", "13~16 years", "17~28 cm", "5~12 kg")
+        
+    # Yorkshire Terrier # Terrier # House Dog
+    elif user=="Yorkshire Terrier" or user=="yorkshire terrier" or user=="Yorkshire terrier" or user=="yorkshire Terrier" or user=="yorkshireterrier":
+        dog("England", "14 years", "15~23 cm", "Below 3 kg")
+        
+    # Schnauzer
+    elif user=="Schnauzer" or user=="Sshnauzer":
+        dog("Germany", "13~15 years", "44~50 cm", "23~25 kg")
+        
+    # Japanese Splitz
+    elif user=="Japanese Splitz" or user=="japanese splitz" or user=="japanese Splitz" or user=="Japanese splitz" or user=="Japanesesplitz":
+        dog("Japan", "10~12 years", "30~36 cm", "5~6 kg")
+        
+    # French Bulldog # House Dog
+    elif user=="French Bulldog" or user=="french bulldog" or user=="frenchbulldog" or user=="frenchBulldog" or user=="FrenchBulldog":
+        dog("France", "10~14 years", "30 cm", "10~12 kg")
+        
+    # Bull Terrier # Terrier # House Dog
+    elif user=="Bull Terrier" or user=="bull terrier" or user=="bullterrier" or user=="bullTerrier" or user=="BullTerrier":
+        dog("England", "10~16 years", "52~58 cm", "24~29 kg")
+        
+    # Shar Pei
+    elif user=="Shar Pei" or user=="shar pei" or user=="sharpei" or user=="sharPei" or user=="SharPei":
+        dog("China", "11~12 years", "46~51 cm", "16~25 kg")
+        
+    # Akita
+    elif user=="Akita" or user=="akita":
+        dog("Japan", "11~15 years", "58~70 cm", "25~40 kg")
+        
+    # Bulldog
+    elif user=="Bulldog" or user=="bulldog" or user=="bull dog" or user=="Bull dog" or user=="Bull Dog":
+        dog("England", "10~12 years", "30~35 cm", "18~23 kg")
+        
+    # Chow Chow
+    elif user=="Chow Chow" or user=="chow chow" or user=="Chowchow" or user=="chowchow" or user=="Chow chow":
+        dog("Cina", "9~12 years", "46~56 cm", "20~33 kg")
+        
+    # Japanese Chin
+    elif user=="Japanese Chin" or user=="japanese chin" or user=="JapaneseChin" or user=="japanesechin" or user=="Japanese chin":
+        dog("Japan", "12~15 years", "22~24 cm", "2~3 kg")
+        
+    # Pekingese
+    elif user=="pekingese" or user=="Pekingese":
+        dog("China", "12~14 years", "15~23 cm", "3~6 kg")
+        
+    # Papillon
+    elif user=="papillon" or user=="Papillon" or user=="papilon" or user=="Papilon":
+        dog("France", "12~15 years", "20~28 cm", "4~5 kg")
+        
+    # Lhasa Apso
+    elif user=="Lhasa Apso" or user=="lhasa apso" or user=="LhasaApso" or user=="lhasaapso" or user=="Lhasaapso":
+        dog("China", "12~13 years", "23~27 cm", "5~7 kg")
+        
+    # Bichon Frise
+    elif user=="Bichon Frise" or user=="bichon frise" or user=="BichonFrise" or user=="bichonfrise" or user=="Bichonfrise":
+        dog("France", "12~15 years", "23~30 cm", "3~6 kg")
+        
+    # Boston Terrier # Terrier # House Dog
+    elif user=="Boston Terrier" or user=="boston terrier" or user=="BostonTerrier" or user=="bostonterrier" or user=="bostonterrier":
+        dog("America", "12~13 years", "37~45 cm", "4~12 kg")
+        
+    # Cavalier King Charles Spaniel
+    elif user=="Cavalier King Charles Spaniel" or user=="cavalier king charles spaniel" or user=="Charles Spaniel" or user=="charles spaniel" or user=="Cavalier King" or user=="cavalier king":
+        dog("England", "12~13 years", "30~34 cm", "5~8 kg")
+        
+    # Scottish Terrier # Terrier # House Dog
+    elif user=="Scottish Terrier" or user=="scottish terrier" or user=="Scottish terrier" or user=="Scottishterrier" or user=="scottishterrier":
+        dog("England", "12~15 years", "25~28 cm", "8~10 kg")
+        
+    # Havanes
+    elif user=="Havanes" or user=="havanes":
+        dog("Cuba", "12~14 years", "20~28 cm", "3~6 kg")
+        
+    # American Eskimo
+    elif user=="American Eskimo" or user=="american eskimo" or user=="America Eskimo" or user=="america eskimo" or user=="Eskimo" or user=="eskimo" or user=="usa eskimo" or user=="USA Eskimo" or user=="USA eskimo":
+        dog("America", "12~14 years", "23~49 cm", "25~35 kg")
+        
+    # Brussels Griffon
+    elif user=="Brussels Griffon" or user=="brussels griffon" or user=="Brussels griffon" or user=="Brussel Griffon" or user=="brussel griffon":
+        dog("Belgium", "8~10 years", "18~20 cm", "2.5~5 kg")
+        
+    
+    # Farm Dog
+    # Collie # Terrier # Shpherd
+    # England # America # Belgium # France # Spain # Hungary
+    
+    # Border Collie # Collie # Farm Dog
+    elif user=="Border Collie" or user=="border collie" or user=="Border collie" or user=="BorderCollie" or user=="bordercollie":
+        dog("England", "14~15 years", "46~54 cm", "14~20 kg")
+        
+    # Welsh Corgi
+    elif user=="Welsh Corgi" or user=="welsh corgi" or user=="Welsh corgi" or user=="Welsh corgi" or user=="WelshCorgi":
+        dog("England", "11~13 years", "25~30 cm", "11~12 kg")
+        
+    # Old English Sheepdog # Sheepdog
+    elif user=="Old English Sheepdog" or user=="old english sheepdog"or user=="Old english sheepdog" or user=="English Sheepdog" or user=="english sheepdog" or user=="English sheepdog" or user=="sheepdog" or user=="Sheepdog" or user=="Old Sheepdog" or user=="old sheepdog" or user=="Old sheepdog":
+        dog("England", "10~12 years", "56 cm", "27~45 kg")
+        
+    # Austrailian Shepherd # Shepherd # Farm Dog
+    elif user=="Austrailian Shepherd" or user=="austrailian shepherd"or user=="Austrailian shepherd" or user=="AustrailianShepherd":
+        dog("America", "12~15 years", "40~50 cm", "16~20 kg")
+        
+    # Collie Langhaar # Collie # Farm Dog
+    elif user=="Collie Langhaar" or user=="collie langhaar"or user=="Collie langhaar" or user=="Collie Langhar" or user=="collie langhar" or user=="Collie langhar":
+        dog("England", "10~14 years", "56~66 cm", "23~34 kg")
+        
+    # Belgian Shepherd # Shepherd # Farm Dog
+    elif user=="Belgian Shepherd" or user=="belgian shepherd"or user=="Belgian shepherd" or user=="Belgiun shepherd" or user=="Belgiumn Shepherd" or user=="belgiun shepherd":
+        dog("Belgium", "10~14 years", "55~65 cm", "28 kg")
+        
+    # Shetland Shepherd #Sheoherd # Farm Dog
+    elif user=="Shetland Shepherd" or user=="shetland shepherd"or user=="Shetland shepherd" or user=="ShetlandShepherd":
+        dog("England", "10~14 years", "33~41 cm", "8~12 kg")
+        
+    # Great Pyrenees
+    elif user=="Great Pyrenees" or user=="great pyrenees"or user=="Great pyrenees" or user=="GreatPyrenees" or user=="Pyrenees" or user=="pyrenees":
+        dog("France and Spain", "10~12 years", "65~82 cm", "39~57 kg")
+        
+    # Bearded Collie # Collie
+    elif user=="Bearded Collie" or user=="bearded collie"or user=="Bearded collie" or user=="BeardedCollie":
+        dog("England", "10~12 years", "51~56 cm", "18~27 kg")
+        
+    # Puli
+    elif user=="Puli" or user=="puli":
+        dog("Hungary", "10~12 years", "36~48 cm", "13~18 kg")
+        
+    # Briard 
+    elif user=="Briard" or user=="briard" or user=="Biard" or user=="biard":
+        dog("France", "10~12 years", "56~68 cm", "30~35 kg")
+        
+    
+    # Working Dog
+    # Retriever # Terrier
+    # England # Russia # Germany # Canada # China # Crotia # Switzerland 
+    
+    # Beagle
+    elif user=="Beagle" or user=="beagle":
+        dog("England", "12~13 years", "32~40 cm", "17~20 kg")
+        
+    # Samoyed
+    elif user=="Samoyed" or user=="samoyed":
+        dog("Russia", "12~13 years", "23~30 cm", "46~56 kg")
+        
+    # Rottweiler
+    elif user=="Rottweiler" or user=="rottweiler" or user=="Rott weiler" or user=="rott weiler" or user=="Rott Whiler" or user=="rott Whiler" or user=="Rottwhiler" or user=="rottwhiler":
+        dog("Germany", "10~12 years", "57~70 cm", "41~50 kg")
+    
+    # Husky
+    elif user=="Husky" or user=="husky" or user=="Hushky" or user=="hushky":
+        dog("Russia", "10~12 years", "51~60 cm", "16~27 kg")
+    
+    # Golden Retriever # Retriever
+    elif user=="Golden Retriever" or user=="golden retriever"or user=="Golden retriever" or user=="Golden" or user=="golden" or user=="gold retriever":
+        dog("England", "10~12 years", "54~61 cm", "25~36 kg")
+        
+    # Doberman Pinscher # Pinscher
+    elif user=="Doberman Pinscher" or user=="doberman pinscher"or user=="Doberman pinscher" or user=="Doberman" or user=="doberman":
+        dog("Germany", "10~13 years", "68~73 cm", "30~42 kg")
+        
+    # German Shepherd # Shepherd
+    elif user=="German Shepherd" or user=="german shepherd"or user=="German shepherd":
+        dog("Germany", "10~11 years", "55~65 cm", "32~44 kg")
+        
+    # Labrador Retriever # Retriever
+    elif user=="Labrador Retriever" or user=="labrador retriever"or user=="Labrador retriever" or user=="Labrador" or user=="labrador" or user=="Lab" or user=="lab":
+        dog("Canada", "10~15 years", "55~62 cm", "25~34 kg")
+        
+    # Dalmatian
+    elif user=="Dalmatian" or user=="dalmatian" or user=="Dalmation" or user=="dalmation":
+        dog("Crotia", "10~12 years", "48~58 cm", "23~25 kg")
+    
+    # Saint Bernard
+    elif user=="Saint Bernard" or user=="saint bernard" or user=="St. Bernard"or user=="St. bernard" or user=="st. Bernard" or user=="st. bernard":
+        dog("Switzerland", "10~12 years", "65~90 cm", "70~95 kg")
+    
+    # Boxer
+    elif user=="Boxer" or user=="boxer":
+        dog("Germany", "11~12 years", "53~64 cm", "25~32 kg")
+    
+    # Tibetan Mastiff
+    elif user=="Tibetan Mastiff" or user=="tibetan mastiff" or user=="Tibetan" or user=="tibetan" or user=="Mastiff" or user=="mastiff" or user=="Mastif" or user=="Mastif":
+        dog("China", "10~16 years", "61~71 cm", "64~82 kg")
+    
+    # Great Dane
+    elif user=="Great Dane" or user=="great dane":
+        dog("Germany", "8~10 years", "75~80 cm", "54~60 kg")
+        
+    # Bernese Mountain Dog # Mountain Dogx
+    elif user=="Bernese Mountain Dog" or user=="bernese mountain dog" or user=="Bernese" or user=="bernese" or user=="Bernees" or user=="bernees":
+        dog("Switzerland", "10~12 years", "58~70 cm", "40~45 kg")
+        
+    # Airedale Terrier # Terrier
+    elif user=="Airedale Terrier" or user=="airedale terrier" or user=="Airedale" or user=="airedale" or user=="Airidale" or user=="airidale" or user=="Airadale" or user=="airadale":
+        dog("England", "10~12 years", "58~61 cm", "40~45 kg")
+        
+        
+    # Hunting Dog
+    # Terrier
+    # England # Russia # Japan # Belgium # France # Afghanistan
+    
+    # English Cocker Spaniel
+    elif user=="English Cocker Spaniel" or user=="english cocker spaniel" or user=="English cocker spaniel" or user=="English Cocker" or user=="english cocker" or user=="English cocker" or user=="Cocker Spaniel" or user=="cocker spaniel" or user=="Cocker Spaniel":
+        dog("England", "12~14 years", "38~43 cm", "13~15 kg")
+    
+    # Borzoi
+    elif user=="Borzoi" or user=="borzoi" or user=="Barzoil" or user=="barzoi":
+        dog("Russia", "10~13 years", "69~79 cm", "35~48 kg")
+    
+    # Shiba Inu
+    elif user=="Shiba Inu" or user=="shiba nu" or user=="Shiba inu" or user=="Shiba" or user=="shiba" or user=="Shiba Ino" or user=="Shiba Ino" or user=="shiba ino" or user=="Shiba ino":
+        dog("Japan", "10~15 years", "36~40 cm", "9~14 kg")
+        
+    # Pointer
+    elif user=="Pointer" or user=="pointer" or user=="Point" or user=="point":
+        dog("England", "10~12 years", "61~69 cm", "20~30 kg")
+    
+    # Bloodhound
+    elif user=="Bloodhound" or user=="bloodhound" or user=="Blood Hound" or user=="blood hound" or user=="Blood hound" or user=="Blood Hund" or user=="blood hund" or user=="Blood hund":
+        dog("Belgium", "10~12 years", "58~69 cm", "36~42 kg")
+    
+    # Basset Hound
+    elif user=="Basset hound" or user=="basset hound" or user=="Basset hound" or user=="Baset Hound" or user=="baset hound" or user=="Baset hound" or user=="Basset Hund" or user=="basset hund" or user=="Basset hund" or user=="Baset Hund" or user=="baset hund" or user=="Baset hund":
+        dog("France", "12~14 years", "30~40 cm", "16~25 kg")
+
+    # Afghan Hound
+    elif user=="Afghan Hound" or user=="afghan hound" or user=="Afghan hound" or user=="Afgan Hound" or user=="afgan hound" or user=="Afgan hound" or user=="Afghan Hund" or user=="afghan hund" or user=="Afghan hund" or user=="Afgan Hund" or user=="afgan hund" or user=="Afgan hund":
+        dog("Afghanistan", "10~12 years", "63~73 cm", "23~27 kg")
+        
+    # Jack Russell Terrier
+    elif user=="Jack Russell Terrier" or user=="jack russell terrier" or user=="Jack russell terrier" or user=="Jack Russel Terrier" or user=="jack russel terrier" or user=="Jack russel terrier" or user=="Jack Rusell Terrier" or user=="jack rusell terrier" or user=="Jack rusell terrier" or user=="Jack Russell" or user=="jack russell" or user=="Jack Russel" or user=="jack russel" or user=="Jack Rusell" or user=="jack rusell" or user=="Russell Terrier" or user=="russell terrier" or user=="Russel Terrier" or user=="russel terrier" or user=="Rusell Terrier" or user=="rusell terrier":
+        dog("England", "12~14 years", "23~38 cm", "5~8 kg")
+        
+    
+    # Dog Group
+    
+    # Terrier
+    elif user=="Terrier" or user=="terrier":
+        terrier()
+        
+    # Collie
+    elif user=="Collie" or user=="collie" or user=="Colie" or user=="colie":
+        collie()
+        
+    # Shepherd
+    elif user=="Shepherd" or user=="shepherd" or user=="Sheferd" or user=="sheferd":
+        shepherd()
+        
+    # Retriever
+    elif user=="Retriever" or user=="retriever" or user=="Retriver" or user=="retriver":
+        retriever()
+        
+        
+    # Country
+    
+    # Poland
+    elif user=="Poland" or user=="poland":
+        poland()
+        
+    # Mexico
+    elif user=="Mexico" or user=="mexico":
+        mexico()
+
+    # China
+    elif user=="China" or user=="china":
+        china()
+        
+    # Malta
+    elif user=="Malta" or user=="malta":
+        malta()
+        
+    # Germany
+    elif user=="Germany" or user=="germany":
+        germany()
+        
+    # Afghanistan
+    elif user=="Afghanistan" or user=="afghanistan" or user=="Afganistan" or user=="afganistan":
+        afghanistan()
+        
+    # England
+    elif user=="England" or user=="england":
+        england()
+        
+    # Japan
+    elif user=="Japan" or user=="japan":
+        japan()
+        
+    # France
+    elif user=="France" or user=="france" or user=="Frans" or user=="franse" or user=="Frans" or user=="frans":
+        france()
+        
+    # America
+    elif user=="America" or user=="america" or user=="American" or user=="American" or user=="Amereca" or user=="amereca" or user=="Amerecan" or user=="amerecan":
+        american()
+        
+    # Cuba
+    elif user=="Cuba" or user=="cuba":
+        cuba()
+        
+    # Belgium
+    elif user=="Belgium" or user=="belgium" or user=="Belgian" or user=="belgian":
+        belgium()
+        
+    # Spain
+    elif user=="Spain" or user=="spain" or user=="Spane" or user=="spane":
+        spain()
+        
+    # Hungary
+    elif user=="Hungary" or user=="hungary" or user=="Hungarian" or user=="hungarian":
+        hungary()
+        
+    # Russia
+    elif user=="Russia" or user=="russia" or user=="Rusia" or user=="rusia" or user=="Rushia" or user=="rushia":
+        russia()
+        
+    # Canada
+    elif user=="Canada" or user=="canada" or user=="Canadian" or user=="canadian":
+        canada()
+        
+    # Crotia
+    elif user=="Crotia" or user=="crotia" or user=="Cratia" or user=="cratia":
+        crotia()
+        
+    # Switzerland
+    elif user=="Switzerland" or user=="switzerland" or user=="Switserland" or user=="switserland" or user=="Switzer Land" or user=="switzer land" or user=="Switzer land" or user=="Switser Land" or user=="switser land" or user=="Switser land":
+        switzerland()
+        
+    # Feedback
+    elif user=="Feedback" or user=="feedback" or user=="Feed Back" or user=="feed back" or user=="Feed back" or user=="Feeback" or user=="feeback":
+        
+        file_true=open("Feedback for project 2.txt", "a")
+        
+        file_false=open("Feedback for project 2.txt", "w")
+        
+        # If the file is ever created
+        if os.path.isfile("Feedback for project 2.txt"):
+            file_true
+            
+            # Giving user an input
+            user_feedback=input("Please give us your feedback: ")
+            print("\n\tThank you for your feedback")
+            
+            # Write the feedback into the file
+            file_true.write(user_feedback)
+        
+            # Close the file to save the file
+            file_true.close()
+            
+        # If the file was never created
+        elif not os.path.isfile("Feedback for project 2.txt"):
+            file_false
+            
+            # Giving user an input
+            user_feedback=input("Please give us your feedback: ")
+            print("\n\tThank you for your feedback")
+            
+            # Write the feedback into the file
+            file_false.write(user_feedback)
+        
+            # Close the file to save the file
+            file_false.close()
+        
+    else:
+        print("\n\tSorry, your input is invalid. Please check your spelling or consider giving us feedback, thank you.")
+    
+    
+    
+    
+
+
