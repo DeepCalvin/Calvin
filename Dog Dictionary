@@ -13,8 +13,7 @@ Source:
 import os.path
 
 print("""      Copyright© 2021 Calvin Supasanya
-      International rights secured
-      All rights reserved    """)
+""")
 
 # Dog
 def dog (country, lifespan, height, weight):
