@@ -1,0 +1,232 @@
+from random import randint
+
+print("Copyright© 2021/3/18 owner: Calvin Supasanya")
+
+def good (health,food,power,hunger):
+    food +=1
+    power -=1
+    hunger -=1
+    return food, power, hunger, health
+def ok (health,food,power,hunger):
+    food +=1
+    power -=1
+    hunger -=1
+    health -=1
+    enemy=["zombie","monster","killer bird","killer rabbit"]
+    enemy_1=enemy[randint(0,3)]
+    equipment=["water","food"]
+    equipment_1=equipment[randint(0,1)]
+    print("You find a",equipment_1,"so it can you help you not starve to death, because you can eat it, and keep you live longer. Unfortunately, there's a",enemy_1," in front of you, and you know what they do? THEY ATTACK YOU! so... Good luck with that!")
+    return food, power, hunger, health
+def harm (health, power, hunger):
+    power -=1
+    hunger -=1
+    health -=1
+    return power, hunger, health
+
+# enemy
+enemy=["zombie","monster","killer bird","killer rabbit"]
+
+# pet
+pet=["lion","tiger","dog"]
+
+# disaster
+disaster=["tornado","thunder storm","tsunami"]
+
+# place
+place=["house","buildings","underground","tree house"]
+
+# equipment
+equipment=["water","food"]
+
+all_option=[enemy,pet,disaster,place,equipment]
+
+
+# Random list # Need help
+enemy_1=enemy[randint(0,3)]
+
+pet_1=pet[randint(0,2)]
+
+disaster_1=disaster[randint(0,2)]
+
+equipment_1=equipment[randint(0,1)]
+    
+
+# Caondition Good, Harm, OK (Step 1)
+
+# good
+good_condition="You have find a",equipment_1,"wich can help you live longer and help you not starve to death, because you can eat it, . Luckily, you also find a friendly",pet_1,"wich they can protect you from harmful things, because it's your pet!"
+
+# ok
+ok_condition="You find a",equipment_1,"so it can you help you not starve to death, because you can eat it, and keep you live longer. Unfortunately, there's a",enemy_1," in front of you, and you know what they do? THEY ATTACK YOU! so... Good luck with that!"
+
+# harm
+harm_condition="Sorry mate, unfourtunately, there's a",disaster_1,"coming really soon, and also, there's a",enemy_1,"in front of you, and they ATTACK YOU!, and so here is a gentle tip for you, I will suggest you to just run away. Good luck!"
+
+# Random condition (Step 2)
+All_condition=[['good condition',good_condition],['ok condition',ok_condition],['harm condition',harm_condition]]
+random_condition=All_condition[randint(0,2)][0]
+
+
+# Health
+health=15
+hurt=health-1
+heal=health+1
+# Hunger
+hunger=10
+hungry=hunger-1
+# Food
+food=5
+# Power
+power=10
+
+
+while health>0 or hunger>0 or power>0:
+    player=input("What do you do now: ")
+    
+    # When player are dead
+    if health==0 or hunger==0 or power==0:
+        print("Sorry man, you have just died. Better luck next time!")
+        break
+    # Status
+    elif player=="status" or player=="Status":
+        print("\nHealth =",health)
+        print("\nHunger =",hunger)
+        print("\nPower =",power)
+    # Eat
+    elif player=="eat" or player=="Eat" and hunger!=1000 and food>0:
+        hunger=hunger+1
+        food=food-1
+        power=power+1
+        health=health+1
+        print("\nFood =",food)
+        print("\nHealth =",health)
+        print("\nHunger =",hunger)
+        print("\nPower =",power)
+    # Attack
+    elif player=="Attack" or player=="attack":
+        print("You have just killed a",enemy_1,"and you know what you just did, you picked up a dead food! You can eat it! Good luck!")
+        health=health-1
+        food=food+1
+        power=power-1
+        hunger=hunger-1
+        print("\nHealth =",health)
+        print("\nHunger =",hunger)
+        print("\nPower =",power)
+    # Run away
+    elif player=="Run away" or player=="run away":
+        random_condition=All_condition[randint(0,2)][0]
+        if random_condition=='good condition':
+            print(good_condition)
+            power=power-2
+            food=food+1
+            hunger=hunger-2
+        elif random_condition=='ok condition':
+            print(ok_condition)
+            power=power-2
+            food=food+1
+            health=health-1
+            hunger=hunger-2
+        elif random_condition=='harm condition':
+            print(harm_condition)
+            power=power-2
+            health-1
+            hunger=hunger-2
+        print("\nHealth =",health)
+        print("\nHunger =",hunger)
+        print("\nPower =",power)
+    # End
+    elif player=="End" or player=="end":
+        break
+    # Forward
+    elif player=="forward" or player=="Forward":
+        random_condition=All_condition[randint(0,2)][0]
+        random_condition=All_condition[randint(0,2)][0]
+        print(random_condition)
+        if random_condition=='good condition':
+            print(good_condition)
+            power=power-1
+            food=food+1
+            hunger=hunger-1
+        elif random_condition=='ok condition':
+            print(ok_condition)
+            power=power-1
+            food=food+1
+            health=health-1
+            hunger=hunger-1
+        elif random_condition=='harm condition':
+            print(harm_condition)
+            power=power-1
+            health=health-1
+            hunger=hunger-1
+        print("\nHealth =",health)
+        print("\nHunger =",hunger)
+        print("\nPower =",power)
+    # Backward
+    elif player=="backward" or player=="Backward":
+        random_condition=All_condition[randint(0,2)][0]
+        if random_condition=='good condition':
+            print(good_condition)
+            power=power-1
+            food=food+1
+            hunger=hunger-1
+        elif random_condition=='ok condition':
+            print(ok_condition)
+            power=power-1
+            food=food+1
+            health=health-1
+            hunger=hunger-1
+        elif random_condition==harm_condition:
+            print(harm_condition)
+            power=power-1
+            health=health-1
+            hunger=hunger-1
+        print("\nHealth =",health)
+        print("\nHunger =",hunger)
+        print("\nPower =",power)
+    # Left
+    elif player=="left" or player=="Left":
+        random_condition=All_condition[randint(0,2)][0]
+        if random_condition=='good condition':
+            print(good_condition)
+            power=power-1
+            food=food+1
+            hunger=hunger-1
+        elif random_condition=='ok condition':
+            print(ok_condition)
+            power=power-1
+            food=food+1
+            health=health-1
+            hunger=hunger-1
+        elif random_condition=='harm condition':
+            print(harm_condition)
+            power=power-1
+            health=health-1
+            hunger=hunger-1
+        print("\nHealth =",health)
+        print("\nHunger =",hunger)
+        print("\nPower =",power)
+    # Right
+    elif player=="right" or player=="Right":
+        random_condition=All_condition[randint(0,2)][0]
+        if random_condition=='good condition':
+            print(good_condition)
+            power=power-1
+            food=food+1
+            hunger=hunger-1
+        elif random_condition=='ok condition':
+            print(ok_condition)
+            power=power-1
+            food=food+1
+            health=health-1
+            hunger=hunger-1
+        elif random_condition=='harm condition':
+            print(harm_condition)
+            power=power-1
+            health=health-1
+            hunger=hunger-1
+        print("\nHealth =",health)
+        print("\nHunger =",hunger)
+        print("\nPower =",power)
+    else:
+        print("I don't know what the word",player,"mean!")
