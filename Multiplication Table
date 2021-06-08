@@ -1,21 +1,69 @@
-try:
-    user_1=int(input("Set a range please: "))
+# All Multiplication Table = Show all user range 0~user
 
-    user_2=int(input("Set another range please: "))
+def allMultiplication():
     
-except (ValueError, TypeError) as err:
-    print("\n\tError:", err)
+    try:
+        user_1=int(input("Set a range please: "))
 
-try:
-    for i in range(user_1+1):
-        for x in range(user_2+1):
-            print("\t")
-            print(i, "x", x, "=", i*x) 
+        user_2=int(input("Set another range please: "))
+    
+    except (ValueError, TypeError, NameError) as err_1:
+        print("\n\tError:", err_1)
+
+    try:
+        for i in range(user_1+1):
+            for x in range(user_2+1):
+                print("\t")
+                print(i, "x", x, "=", i*x) 
        
-            if x==user_2:
-                print("\t")
-                print("\t")
+                if x==user_2:
+                    print("\t")
+                    print("\t")
                 
-except (ValueError, TypeError, NameError) as err:
-    print("\n\tError:", err)
-    print("\n\Please try again later...")
+    except (ValueError, TypeError, NameError) as err_2:
+        print("\n\tError: Your input should be an integer")
+        print("\n\tError:", err_2)
+        print("\nPlease try again later...")
+
+
+# Short Multiplication Table = Show user's range multiplication table to user
+
+def shortMultiplication():
+    
+    try:
+        number=int(input("Type in a number: "))
+    
+    except (ValueError, TypeError, NameError) as err_1:
+        print("\n\tError: Your input should be an integer")
+        print("\n\tError:", err_1)
+        print("\nPlease try again later...")
+        
+    try:
+        for i in range (number+1):
+            print("\t")
+            print(i, "x", number, "=", i*number)
+            
+    except (ValueError, TypeError, NameError) as err_2:
+        print("\n\tError: Your input should be an integer")
+        print("\n\tError:", err_2)
+        print("\nPlease try again later...")
+        
+        
+# Letting user have the choice
+print("\n\tAll Multiplication Table = Show all user range 0~user")
+print("\n\tShort Multiplication Table = Show user's range multiplication table to user")
+
+# Choice 1 or 2
+user_choice=input("Type choice 1 or 2: ")
+
+# allMultiplication()
+if user_choice=="1" or user_choice=="All Multiplication Table" or user_choice=="all multiplication table" or user_choice=="All multiplication table":
+    allMultiplication()
+    
+# shortMultiplication()
+elif user_choice=="2" or user_choice=="Short Multiplication Table" or user_choice=="short multiplication table" or user_choice=="Short multiplication table":
+    shortMultiplication()
+    
+# Invalid input
+else:
+    print("Invalid input, try again later...")
