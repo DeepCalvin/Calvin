@@ -12,7 +12,7 @@ Source:
 # importing os.path
 import os.path
 
-print("""      Copyright© 2021 Calvin Supasanya
+print("""Copyright© 2021 Calvin Supasanya
 """)
 
 # Dog
