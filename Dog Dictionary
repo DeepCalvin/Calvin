@@ -515,7 +515,7 @@ while True:
         dog("Russia", "10~13 years", "69~79 cm", "35~48 kg")
     
     # Shiba Inu
-    elif user=="Shiba Inu" or user=="shiba nu" or user=="Shiba inu" or user=="Shiba" or user=="shiba" or user=="Shiba Ino" or user=="Shiba Ino" or user=="shiba ino" or user=="Shiba ino":
+    elif user=="Shiba Inu" or user=="shiba inu" or user=="Shiba inu" or user=="Shiba" or user=="shiba" or user=="Shiba Ino" or user=="Shiba Ino" or user=="shiba ino" or user=="Shiba ino":
         dog("Japan", "10~15 years", "36~40 cm", "9~14 kg")
         
     # Pointer
